@@ -4,20 +4,11 @@ public class Main {
     static String exercitiul = "Exercitiul ";
     static int tema = 1;
     static String calcul = "Calcul";
-    static int a;
-    static int b;
-
 
     public static void main(String[] args) {
         hello();
-
         suma();
-
         impartirea();
-//        double z = impartirea(a, b);
-//        System.out.println(z);
-//        System.out.println("\tRezultatul pentru numerele pe care le-ati introdus (" + a + ", " + b + ") este: " + z + "\n");
-
         calculA();
         calculB();
         calculC();
@@ -62,13 +53,14 @@ public class Main {
         return calculA;
     }
 
-    private static double impartirea() {
+    private static void impartirea() {
         System.out.println(exercitiul + ++tema + ": Printati rezultatul impartirii a doua numere.\n" +
                 "Atentie, daca numarul nu este intreg, sa afiseze si valorile dupa virgula.");
-        double impartit = (double) a / b;
-        // double impartit =  a / b;
-        System.out.println("\tRezultatul pentru numerele pe care le-ati introdus (" + a + ", " + b + ") este: " + impartit + "\n");
-        return impartit;
+        int x = 9;
+        int z = 4;
+        double impartit = (double) x / z;
+        System.out.println("\tRezultatul pentru (" + x + "/" + z + ") este: " + impartit + "\n");
+        //return (double)impartit;
     }
 
     private static int suma() {
