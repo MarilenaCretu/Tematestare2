@@ -60,7 +60,6 @@ public class Main {
         int z = 4;
         double impartit = (double) x / z;
         System.out.println("\tRezultatul pentru (" + x + "/" + z + ") este: " + impartit + "\n");
-        //return (double)impartit;
     }
 
     private static int suma() {
